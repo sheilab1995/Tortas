@@ -1,0 +1,161 @@
+/* Estilo css */
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(201, 140, 186);
+}
+
+header {
+    background-color: rgb(140, 66, 206);
+    color: rgb(240, 234, 240);
+    padding: 10%;
+    text-align: center;
+    
+    
+    
+
+    
+}
+
+h1{
+    margin-right: 20%;
+    margin: 0% 10% 5% 10%;
+    
+   
+}
+
+nav{
+    background-color:rgb(159, 142, 173);
+    color: aliceblue;
+    height: 60px;
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 1%;
+    margin-right: 15%;
+    width: 100%;
+    
+}
+
+nav ul{
+    list-style: none;
+    margin: 0%;
+    padding: 5px;
+    display:flex;
+}
+
+nav li a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 6px 10px;
+    display:inline-block;
+    width: 90%;
+}
+
+nav li:hover {
+    color: crimson;
+}
+
+#content{
+    padding: 5px;
+
+}
+h2{
+    color:rgb(240, 237, 234);
+    
+}
+.movies-container{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 12%;
+
+}
+.movie{
+    flex-basis: 70%;
+    margin: 18px;
+    padding: 10px;
+    background-color: lightpink;
+    box-shadow: 0 2px 4px black;
+
+}
+.movie img{
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+}
+.movie h3{
+    color: rgb(43, 12, 32);
+    font-size: 18px;
+    margin: 10px 2px ;
+}
+
+.movie p{
+    color: rgb(73, 20, 73);
+    line-height: 1.5;
+    margin-bottom: 4%;
+}
+h4{
+    color: blueviolet;
+    margin: 0% 22%;
+}
+p{
+    margin: 1%;
+ color: black;
+}
+
+
+@media(min-width: 590){
+.movies-container{
+    justify-content: space-between;
+}
+
+.movie{
+    flex-basis: calc 33.33% - 20px;
+    justify-content: space-around;
+}
+}
+
+/* Form */
+
+div{
+    margin-right:18px;
+
+}
+h3{
+    font-size: 20px;
+    margin-left: 9%;
+}
+
+form{
+    max-width: 400px ;
+    margin: 0 auto;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+button{
+    display: block;
+    background-color:deeppink;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3ms;
+}
+button:hover{
+    background-color: chartreuse;
+}
